@@ -57,8 +57,6 @@ export class AuthController {
 
         const adminLogin = request.path === Path.adminLogin
 
-        console.log(request.path)
-        console.log(user.is_admin)
         if (!user.is_admin && adminLogin) {
             throw new UnauthorizedException();
         }

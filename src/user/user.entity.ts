@@ -1,5 +1,6 @@
 import { Exclude } from "class-transformer";
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Order } from "src/order/order.entity";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('users')
 export class User {
@@ -21,4 +22,7 @@ export class User {
 
     @Column({ default: true })
     is_admin: boolean;
+
+    @OneToMany(() => Order, order => order.user)
+    orders: Order[];
 }
