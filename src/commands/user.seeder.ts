@@ -19,5 +19,13 @@ import * as faker from 'faker'
         });
     }
 
+    await userService.save({
+        first_name: 'admin',
+        last_name: 'admin',
+        email: 'admin@admin.com',
+        password,
+        is_admin: true
+    });
+
     process.exit()
 })()
