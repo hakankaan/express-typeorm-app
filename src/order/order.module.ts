@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { DatabaseModule } from 'src/database.module';
-import { ProductModule } from 'src/product/product.module';
-import { SharedModule } from 'src/shared/shared.module';
+import { DatabaseModule } from '../database.module';
+import { ProductModule } from '../product/product.module';
+import { SharedModule } from '../shared/shared.module';
 import { OrderController } from './order.controller';
 import { orderProviders } from './order.providers';
 import { OrderService } from './order.service';

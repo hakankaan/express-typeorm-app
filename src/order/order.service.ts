@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { Provider } from 'src/constants';
-import { AbstractService } from 'src/shared/abstract.service';
+import { Provider } from '../constants';
+import { AbstractService } from '../shared/abstract.service';
 import { Repository } from 'typeorm';
 import { Order } from './order.entity';
 

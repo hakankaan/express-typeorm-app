@@ -1,7 +1,7 @@
 import { ClassSerializerInterceptor, Controller, Get, NotFoundException, Param, Post, Req, UseGuards, UseInterceptors } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { Request } from 'express';
-import { Path } from 'src/constants';
+import { Path } from '../constants';
 import { AuthGuard } from '../auth/auth.guard';
 import { ProductService } from '../product/product.service';
 import { OrderService } from './order.service';
