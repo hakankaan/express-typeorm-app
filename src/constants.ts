@@ -1,6 +1,7 @@
 export enum Provider {
     database = 'DATABASE_CONNECTION',
-    user = 'USER_REPOSITORY'
+    user = 'USER_REPOSITORY',
+    product = 'PRODUCT_REPOSITORY'
 }
 
 export enum Jwt {
